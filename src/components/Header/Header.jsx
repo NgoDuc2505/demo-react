@@ -1,6 +1,8 @@
+import ButtonColor from "../ButtonColor/ButtonColor"
 
 
-function Header() {
+
+function Header(props) {
     return (
         <div className="header">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,6 +36,7 @@ function Header() {
                     </ul>
                 </div>
             </nav>
+            <ButtonColor setColorFunct={props.setColorFunct}/>
         </div>
     )
 }
